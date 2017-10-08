@@ -1,66 +1,49 @@
-# Project Title
+# Tutuka Trial Project
 
-One Paragraph of project description goes here
+This is a Transaction matching/reconciliation project i created in Flask(a Python micro-framework). This is hosted live at: 
+[http://kwamedavour87.pythonanywhere.com/](http://kwamedavour87.pythonanywhere.com/)
+
+##How it works:
+
+ * upload 2 csv files
+ * ajax request is formed and processed in backend [app.py]
+ * 2 files are checked for extension validity and saved on server
+ * duplicates records are removed, because they are redundant
+ * count of total records is made
+ * common records(based on Date/Amount/Identifier/Narrative) are found and written to tmp file, and count made
+ * count of uncommon/unmatched records is made from difference of original 2 files and tmp file(common records)
+ * response is sent back via ajax, from different templates and loaded on page without refresh
+ * unmatched records are displayed as reports in front-end and in logs for analysis
+
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* Python 2.7.12
+* Flask
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+* install python 2.7.12
+* install pip, or easy_install (for linux based systems)
+* install virtualenv
+* install Flask
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+## Running the app
 
 ```
-until finished
+python app.py
+Open browser, navigate to: http://127.0.0.1:5000/
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Flask](http://flask.pocoo.org/) - A web framework built in Python
+* [JQuery](https://jquery.com/) - Frontend js library used
+* [HTML/CSS/Bootstrap](http://getbootstrap.com/) - Markup layout and styling
 
 ## Contributing
 
