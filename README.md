@@ -44,17 +44,14 @@ git clone https://github.com/ghost-protocol/tutuka-flaskApp.git
 
 ```
 python app.py
-Open browser, navigate to: http://127.0.0.1:5000/
 ```
+Open browser, navigate to: http://127.0.0.1:5000/
+
 ## Built With
 
 * [Flask](http://flask.pocoo.org/) - A web framework built in Python
 * [JQuery](https://jquery.com/) - Frontend js library used
 * [HTML/CSS/Bootstrap](http://getbootstrap.com/) - Markup layout and styling
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
