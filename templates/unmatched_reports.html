@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Unmatched Results</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <br/>
+  <br/>
+
+  <div class="container">
+
+      <div class="row centered">
+
+          <div class="col-sm-4 col-md-12">
+            <h1>Unmatched report</h1>
+
+              <table border=1 class="floatedTable" cellpadding="5" width="50%">
+                <tr>
+                    <td><strong>{{ dict_files['file1'] }}</strong></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Date</strong></td>
+                    <td><strong>Reference</strong></td>
+                    <td><strong>Amount</strong></td>
+                </tr>
+                {% for line in unmatched_file1_content %}
+                <tr>
+                    <td>{{line.TransactionDate}}</td>
+                    <td>{{line.TransactionID}}</td>
+                    <td align="right">{{line.TransactionAmount}}</td>
+                </tr>
+                {% endfor %}
+              </table>
+
+              <table border=1 class="floatedTable" cellpadding="5" width="50%">
+                <tr>
+                    <td><strong>{{ dict_files['file2'] }}</strong></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Date</strong></td>
+                    <td><strong>Reference</strong></td>
+                    <td><strong>Amount</strong></td>
+                </tr>
+                {% for line in unmatched_file2_content %}
+                <tr>
+                    <td>{{line.TransactionDate}}</td>
+                    <td>{{line.TransactionID}}</td>
+                    <td align="right">{{line.TransactionAmount}}</td>
+                </tr>
+                {% endfor %}
+              </table>
+
+          </div>
+      </div>
+
+  </div>
+
+  </body>
+</html>

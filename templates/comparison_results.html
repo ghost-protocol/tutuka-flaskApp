@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comparison Results</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <br/>
+  <br/>
+    <div class="container">
+       <div class="row centered">
+           <div class="col-sm-4 col-md-12">
+            <h1>Comparison results</h1>
+
+        <div class="container-fluid">
+          <div class="row centered">
+              <div class="col-sm-4 col-md-5"><strong>{{ dict_files['file1'] }}</strong></div>
+              <div class="col-sm-4 col-md-2"></div>
+              <div class="col-sm-4 col-md-5"><strong>{{ dict_files['file2'] }}</strong></div>
+          </div>
+        </div>
+
+      <!--<div class="container-fluid">-->
+          <!--<div class="row centered">-->
+              <!--<div class="col-sm-6 col-md-6">-->
+                  <!--Col 1-->
+              <!--</div>-->
+          <!--</div>-->
+      <!--</div>-->
+
+      <div class="container-fluid">
+          <div class="row centered">
+              <div class="col-sm-2 col-md-3">
+                  <p><strong>Total Records:</strong></p>
+                  <p><strong>Matching Records:</strong></p>
+                  <p><strong>Unmatched Records</strong></p>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <p>{{ file1_count }}</p>
+                <p>{{ match_count }}</p>
+                <p>{{ unmatched_count_file1 }}</p>
+              </div>
+              <div class="col-sm-4 col-md-2"></div>
+              <div class="col-sm-2 col-md-3">
+                  <p><strong>Total Records:</strong></p>
+                  <p><strong>Matching Records:</strong></p>
+                  <p><strong>Unmatched Records</strong></p>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                  <p>{{ file2_count }}</p>
+                  <p>{{ match_count }}</p>
+                  <p>{{ unmatched_count_file1 }}</p>
+              </div>
+          </div>
+      </div>
+        <p></p>
+        <div id="resultFilename1"></div>
+        <div id="resultFilename2"></div>
+
+
+        <button type="button" id="btnUnmatched">Unmatched Report</button>
+      </div>
+    </div>
+    </div>
+
+      <div id="showUnmatchedResults"></div>
+      <script src="static/js/jquery-latest.min.js"></script>
+      <script src="static/js/app.js"></script>
+  </body>
+</html>

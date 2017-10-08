@@ -1,0 +1,39 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.floatedTable {
+  float:left;
+}
+.inlineTable {
+  display: inline-block;
+}
+
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/* Extra: Just to see columns...*/
+.row {
+    border: 1px solid black;
+}
+
+.row > div {
+    padding: 15px;
+    border: 0px solid red;
+}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
