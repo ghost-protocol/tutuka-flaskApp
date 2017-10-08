@@ -1,9 +1,11 @@
 # Tutuka Trial Project
 
-This is a Transaction matching/reconciliation project i created in Flask(a Python micro-framework). This is hosted live at: 
+This is a Transaction matching/reconciliation project i created in Flask(a Python micro-framework). 
+
+This is hosted live at:
 [http://kwamedavour87.pythonanywhere.com/](http://kwamedavour87.pythonanywhere.com/)
 
-##How it works:
+## How it works:
 
  * upload 2 csv files
  * ajax request is formed and processed in backend [app.py]
@@ -32,6 +34,11 @@ See deployment for notes on how to deploy the project on a live system.
 * install pip, or easy_install (for linux based systems)
 * install virtualenv
 * install Flask
+* download zip: https://github.com/ghost-protocol/tutuka-flaskApp/archive/master.zip
+* or clone github repository
+```
+git clone https://github.com/ghost-protocol/tutuka-flaskApp.git
+```
 
 ## Running the app
 
@@ -51,20 +58,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+I used [Git](https://git-scm.com/) for versioning.
