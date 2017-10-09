@@ -76,12 +76,12 @@ def upload():
             if allowed_file(file1.filename) and allowed_file(file2.filename):
                 filename1 = secure_filename(file1.filename)
                 file1.save(os.path.join(app.config['UPLOAD_FOLDER'], filename1))
-                app.logger.info(file1.filename + ' is valid. Finished upload..')
+                app.logger.info(file1.filename + ' is valid. File saved to /uploads.')
 
                 app.logger.info(file1.filename + ' is valid. Uploading..')
                 filename2 = secure_filename(file2.filename)
                 file2.save(os.path.join(app.config['UPLOAD_FOLDER'], filename2))
-                app.logger.info(file2.filename + ' is valid. Finished upload..')
+                app.logger.info(file2.filename + ' is valid. File saved to /uploads.')
 
                 # store filename for global use
                 dict_files['file1'] = filename1
