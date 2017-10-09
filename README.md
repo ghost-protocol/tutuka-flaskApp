@@ -39,6 +39,7 @@ See deployment for notes on how to deploy the project on a live system.
 ```
 git clone https://github.com/ghost-protocol/tutuka-flaskApp.git
 ```
+* create 'logs' directory and 'uploads' directory
 
 ## Running the app
 

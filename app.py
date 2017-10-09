@@ -19,7 +19,7 @@ handler.setFormatter(Formatter("[%(asctime)s] %(levelname)-8s %(message)s", "%Y-
 app.logger.addHandler(handler)
 
 # path to upload folder
-UPLOAD_FOLDER = os.path.join(basedir, './uploads')
+UPLOAD_FOLDER = './uploads'
 
 # add file path to config
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
