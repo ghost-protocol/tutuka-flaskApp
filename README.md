@@ -1,6 +1,6 @@
 # Tutuka Trial Project
 
-This is a Transaction matching/reconciliation project i created in Flask(a Python micro-framework). 
+This is a Transaction matching/reconciliation project i created in Flask (Python micro-framework).
 
 This is hosted live at:
 [http://kwamedavour87.pythonanywhere.com/](http://kwamedavour87.pythonanywhere.com/)
